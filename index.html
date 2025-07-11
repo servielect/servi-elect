@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serví - Elect | Servicios Eléctricos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --rojo: #e53935;
+      --azul: #1e88e5;
+      --blanco: #ffffff;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--blanco);
+      color: #333;
+    }
+    header {
+      background: var(--azul);
+      color: var(--blanco);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .logo-img {
+      height: 50px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      color: var(--blanco);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      background: var(--rojo);
+      color: var(--blanco);
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    .hero h1 {
+      margin: 0 0 0.5rem 0;
+      font-size: 2.5rem;
+    }
+    .services, .about, .contact {
+      padding: 2rem;
+      max-width: 960px;
+      margin: auto;
+    }
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+    .services li {
+      background: #f0f0f0;
+      margin-bottom: 0.5rem;
+      padding: 1rem;
+      border-left: 4px solid var(--rojo);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    button {
+      background: var(--azul);
+      color: var(--blanco);
+      border: none;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .mapa iframe {
+      width: 100%;
+      border: 0;
+      margin-top: 1rem;
+    }
+    footer {
+      background: #222;
+      color: var(--blanco);
+      text-align: center;
+      padding: 1rem;
+    }
+    .socials {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    .socials a {
+      color: var(--blanco);
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+      text-decoration: none;
+    }
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo Serví - Elect" class="logo-img">
+      <span>Serví - Elect</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#sobre">Sobre Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero">
+    <h1>Bienvenido a Serví - Elect</h1>
+    <p>Expertos en soluciones eléctricas integrales</p>
+  </section>
+
+  <section id="servicios" class="services">
+    <h2>Servicios</h2>
+    <ul>
+      <li>Fabricación, ventas y distribución de protectores eléctricos integrales</li>
+      <li>Reparación de plantas eléctricas</li>
+      <li>Ventas de materiales y repuestos eléctricos</li>
+    </ul>
+  </section>
+
+  <section id="sobre" class="about">
+    <h2>Sobre Nosotros</h2>
+    <p>Serví - Elect es una empresa dedicada a brindar soluciones eléctricas confiables y de calidad para hogares y negocios.</p>
+  </section>
+
+  <section id="contacto" class="contact">
+    <h2>Contáctanos</h2>
+    <form>
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <textarea placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <div class="mapa">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18..." height="300" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Serví - Elect. Todos los derechos reservados.</p>
+    <div class="socials">
+      <a href="mailto:servielet.fab@gmail.com" title="Correo"><i class="fas fa-envelope"></i></a>
+      <a href="https://instagram.com/servielect.ve" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/584247749699" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/584247749699" class="whatsapp-float" target="_blank" title="Chatea por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</body>
+</html>
